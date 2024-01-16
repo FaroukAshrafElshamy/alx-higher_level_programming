@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c $PYFILE # tells the interpreter to execute code from a string argument instead of a file
+python3 - c $PYFILE
