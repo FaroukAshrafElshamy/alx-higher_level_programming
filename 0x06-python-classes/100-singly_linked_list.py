@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
+"""Initilizing a new private inistance from Squalre class"""
 
 class Node:
+    """Initilization method"""
     def __init__(self, data, next_node=None):
         self.data = data
         self.next_node = next_node
