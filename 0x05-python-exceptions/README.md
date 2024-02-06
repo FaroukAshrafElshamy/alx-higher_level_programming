@@ -1,4 +1,4 @@
-# <span style="color: blue"> Python Exception </span>
+# <font color= blue"> Python Exception </font>
 
 In this project, I learned handling errors and exceptions in Python with `try`
 and `except`.
