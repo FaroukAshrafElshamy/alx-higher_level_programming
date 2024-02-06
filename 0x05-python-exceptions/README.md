@@ -1,7 +1,7 @@
 #	${\color{#7de1ff}Python Exception}$
 
-In this project, I learned handling errors and exceptions in Python with `try`
-and `except`.
+${\color{gray}In this project, I learned handling errors and exceptions in Python with `try`
+and `except`.}$
 
 ## Tasks :page_with_curl:
 
