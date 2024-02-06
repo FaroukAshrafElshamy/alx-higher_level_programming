@@ -2,5 +2,5 @@
 """Define a class call square"""
 
 
-class square:
+class Square:
     pass
