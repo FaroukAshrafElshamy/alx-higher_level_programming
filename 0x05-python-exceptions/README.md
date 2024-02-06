@@ -5,7 +5,7 @@ and `except`.
 
 ## Tasks :page_with_curl:
 
-* [Safe_Print_List](./0-safe_print_list.py)
+* [`Safe_Print_List`](./0-safe_print_list.py)
 
 
 
