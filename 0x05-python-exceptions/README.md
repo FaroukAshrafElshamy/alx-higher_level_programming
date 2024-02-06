@@ -1,4 +1,4 @@
-#	$${\color{blue}Python Exception}$$
+#	${\color{blue}Python Exception}$
 
 In this project, I learned handling errors and exceptions in Python with `try`
 and `except`.
