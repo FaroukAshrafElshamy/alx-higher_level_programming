@@ -9,7 +9,7 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """ two arguments - width and -height """
-        self.number_of_instances += 1
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -56,5 +56,5 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        self.number_of_instances -= 1
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
