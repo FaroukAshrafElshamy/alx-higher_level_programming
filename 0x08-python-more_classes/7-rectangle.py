@@ -49,10 +49,12 @@ class Rectangle:
     def __str__(self):
         if self.__height == 0 or self.__width == 0:
             return ""
-        else:
-            out = (str(self.print_symbol) * self.__width + "\n")
-            out *= (self.__height - 1)
-            return out + (str(self.print_symbol) * self.__width)
+        List = []
+        for i in range(self.__height):
+            [List.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
+                List.append("\n")
+        return "".join(List)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
