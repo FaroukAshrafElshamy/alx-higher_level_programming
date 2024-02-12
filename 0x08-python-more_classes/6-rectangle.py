@@ -4,9 +4,10 @@
 
 class Rectangle:
 
-    """ Initilization methon (Constructor) """
     number_of_instances = 0
+    print_symbol = '#'
 
+    """ Initilization methon (Constructor) """
     def __init__(self, width=0, height=0):
         """ two arguments - width and -height """
         type(self).number_of_instances += 1
@@ -49,8 +50,8 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
-            out = ("#" * self.__width + "\n") * (self.__height - 1)
-            return out + ("#" * self.__width)
+            out = (self.print_symbol * self.__width + "\n") * (self.__height - 1)
+            return out + (self.print_symbol * self.__width)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
