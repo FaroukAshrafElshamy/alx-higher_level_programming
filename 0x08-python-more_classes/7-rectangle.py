@@ -3,7 +3,12 @@
 
 
 class Rectangle:
+    """Represent a rectangle.
 
+    Attributes:
+        number_of_instances (int): The number of Rectangle instances.
+        print_symbol (any): The symbol used for string representation.
+    """
     number_of_instances = 0
     print_symbol = "#"
 
@@ -49,12 +54,10 @@ class Rectangle:
     def __str__(self):
         if self.__height == 0 or self.__width == 0:
             return ""
-        List = []
-        for i in range(self.__height):
-            [List.append(str(self.print_symbol)) for j in range(self.__width)]
-            if i != self.__height - 1:
-                List.append("\n")
-        return "".join(List)
+        else:
+            out = (str(self.print_symbol) * self.__width + "\n")
+            out *= (self.__height - 1)
+            return out + (str(self.print_symbol) * self.__width)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
