@@ -5,7 +5,8 @@
 class Rectangle:
 
     """ Initilization methon (Constructor) """
-    def __init__(self, width=0, height=0) -> None:
+    def __init__(self, width=0, height=0):
+        """ two arguments - width and -height """
         self.width = width
         self.height = height
 
