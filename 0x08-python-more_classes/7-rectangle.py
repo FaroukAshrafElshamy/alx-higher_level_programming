@@ -50,9 +50,9 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return ""
         else:
-            out = (self.print_symbol * self.__width + "\n")
+            out = (str(self.print_symbol) * self.__width + "\n")
             out *= (self.__height - 1)
-            return out + (self.print_symbol * self.__width)
+            return out + (str(self.print_symbol) * self.__width)
 
     def __repr__(self):
         return "Rectangle({}, {})".format(self.__width, self.__height)
@@ -60,3 +60,27 @@ class Rectangle:
     def __del__(self):
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
+
+my_rectangle_1 = Rectangle(8, 4)
+print(my_rectangle_1)
+print("--")
+my_rectangle_1.print_symbol = "&"
+print(my_rectangle_1)
+print("--")
+
+my_rectangle_2 = Rectangle(2, 1)
+print(my_rectangle_2)
+print("--")
+Rectangle.print_symbol = "C"
+print(my_rectangle_2)
+print("--")
+
+my_rectangle_3 = Rectangle(7, 3)
+print(my_rectangle_3)
+
+print("--")
+
+my_rectangle_3.print_symbol = ["C", "is", "fun!"]
+print(my_rectangle_3)
+
+print("--")
