@@ -16,6 +16,8 @@
 
 * [Python classes](0x06-python-classes/)
 
+* [Python classes](0x06-python-classes/)
+
 * [Python more classes](0x08-python-more_classes/)
 
 * [Python everything is object](0x09-python-everything_is_object/)
