@@ -1,11 +1,5 @@
 # 1-my_list.txt
 
-Instantiation
-=============
-
-``MyList`` can be instantiated with no arguments, which will return
-an empty list:
-
 ::
 
 >>> MyList = __import__('1-my_list').MyList
