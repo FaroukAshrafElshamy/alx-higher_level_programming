@@ -16,7 +16,7 @@
 
 * [Python classes](0x06-python-classes/)
 
-* [Python classes](0x06-python-classes/)
+* [Python test driven development](0x07-python-test_driven_development/)
 
 * [Python more classes](0x08-python-more_classes/)
 
