@@ -1,3 +1,5 @@
 -- Count 89
 -- displays the number of records with id = 89
-Select Count(*) from first_table where id=89;
+SELECT COUNT(*)
+FROM first_table
+WHERE id = 89;
