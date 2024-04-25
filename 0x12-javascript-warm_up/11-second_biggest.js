@@ -4,8 +4,8 @@ for (let i = 2; i < (process.argv.length); i++) {
   array.push(process.argv[i]);
 }
 array.sort((a, b) => b - a);
-if (isNaN(array[1]) || array[1] === '1') {
-  console.log(0);
-} else {
+if (array.length > 1) {
   console.log(array[1]);
+} else {
+  console.log(0);
 }
