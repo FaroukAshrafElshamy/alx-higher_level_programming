@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
 const array = [];
 for (let i = 2; i < (process.argv.length); i++) {
   array.push(process.argv[i]);
