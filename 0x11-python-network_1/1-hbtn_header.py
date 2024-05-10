@@ -9,7 +9,8 @@ value of the X-Request-Id variable
 from urllib import request
 import sys
 
-url = sys.argv[1]
-Rec = request.Request(url)
-with request.urlopen(Rec) as R:
-    print(dict(R.headers).get('X-Request-Id'))
+if __name__ == "__main__":
+    url = sys.argv[1]
+    Rec = request.Request(url)
+    with request.urlopen(Rec) as R:
+        print(dict(R.headers).get('X-Request-Id'))
